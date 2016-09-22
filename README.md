@@ -13,14 +13,15 @@ Per Express se non l'avete già installato potete dare:
 npm install express --save
 
 ```
-Poi richiamate il server con nodejs:
+Poi richiamate il server con nodejs, dopo che vi siete spostati nella directory "chat" :
 
 ```
+cd chat/
 node index.js
 
 ```
 
 Aprite il vostro browser sulla porta 3000: "http://localhost:3000". Eventualmente potete cambiare l'indirizzo di porta dalla variabile "port" in "index.js".
 
-Ogni finestra (o scheda) aperta del browser rappresenta una sessione in cui viene chiesto di inserire il proprio nome che vi rappresenterà all'internoi della chat e poi ... buon divertimento.
+Ogni finestra (o scheda) aperta del browser rappresenta una sessione in cui viene chiesto di inserire il proprio nome che vi rappresenterà all'interno della chat e poi ... buon divertimento.
 
