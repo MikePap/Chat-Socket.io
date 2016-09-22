@@ -1,25 +1,26 @@
 
 # Socket.IO Chat
 
-A simple chat demo for socket.io
+Una semplice chat con l'uso di socket.io
 
-## How to use
+## Come si usa la chat
+
+Installare i pacchetti socket.io ed Express. 
+Nel file package.json risulta soltanto il pacchetto socket.io fra le dipendenze, quindi basta dare "npm install" per installarlo.
+Per Express se non l'avete già installato potete dare:
 
 ```
-$ cd socket.io
-$ npm install
-$ cd examples/chat
-$ npm install
-$ node .
+npm install express --save
+
+```
+Poi richiamate il server con nodejs:
+
+```
+node index.js
+
 ```
 
-And point your browser to `http://localhost:3000`. Optionally, specify
-a port by supplying the `PORT` env variable.
+Aprite il vostro browser sulla porta 3000: "http://localhost:3000". Eventualmente potete cambiare l'indirizzo di porta dalla variabile "port" in "index.js".
 
-## Features
+Ogni finestra (o scheda) aperta del browser rappresenta una sessione in cui viene chiesto di inserire il proprio nome che vi rappresenterà all'internoi della chat e poi ... buon divertimento.
 
-- Multiple users can join a chat room by each entering a unique username
-on website load.
-- Users can type chat messages to the chat room.
-- A notification is sent to all users when a user joins or leaves
-the chatroom.
